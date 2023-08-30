@@ -27,3 +27,31 @@
     Output:
         F !
 */
+#include <stdio.h>
+
+int main() {
+    int a ;
+    printf( "enter score :\n" ) ;
+    scanf( "%d", &a ) ;
+
+    if ( a >= 0 && a < 50 ) {
+        printf( "F !\n" ) ;
+    } else if ( a < 55 ) {
+        printf( "D !\n" ) ;
+    } else if ( a < 60 ) {
+        printf( "D+ !\n" ) ;
+    } else if ( a < 65 ) {
+        printf( "C !\n" ) ;
+    } else if ( a < 70 ) {
+        printf( "C+ !\n" ) ;
+    } else if ( a < 75 ) {
+        printf( "B !\n" ) ;
+    } else if ( a < 80 ) {
+        printf( "B+ !\n" ) ;
+    } else if ( a <= 100 ) {
+        printf( "A !\n" ) ;
+    } else {
+        printf( "Please enter a valid number\n" ) ;
+    } //end else
+    return 0 ;
+} //end main function
